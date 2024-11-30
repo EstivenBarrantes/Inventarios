@@ -1,0 +1,189 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px; /* Ancho predeterminado para pantallas grandes */
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Mensaje */
+.message {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: green;
+}
+
+/* Formularios */
+form {
+    margin-bottom: 20px;
+}
+
+form input,
+form select {
+    padding: 8px;
+    margin: 3px 0;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+form button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botón de eliminación */
+.delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+/* Barra de navegación a la izquierda */
+.sidebar {
+    width: 200px;
+    background-color: #ac2424;
+    color: #662b2b;
+    padding: 15px;
+    height: 100vh;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Ajusta el ancho para dispositivos más pequeños */
+        margin: 0;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .sidebar {
+        width: 100%; /* La barra de navegación ocupa todo el ancho */
+        height: auto;
+        position: relative; /* Desaparece el estilo fijo */
+        padding: 10px;
+    }
+
+    .sidebar h2 {
+        font-size: 14px;
+    }
+
+    .sidebar a {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    table th,
+    table td {
+        font-size: 12px; /* Reduce el tamaño de fuente en tablas */
+        padding: 6px;
+    }
+
+    form input,
+    form select {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    form button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 10px; /* Reduce aún más el tamaño en dispositivos muy pequeños */
+    }
+
+    .sidebar {
+        display: none; /* Oculta la barra de navegación en pantallas muy pequeñas */
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+}
